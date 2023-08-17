@@ -1,18 +1,19 @@
 import React from "react";
-import App from "./App.tsx";
-import "./index.css";
+import Root from "./Root.tsx";
+import "./tailwind.css";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
+import Inicio from "./pages/inicio/Index.tsx";
 
 const router = createBrowserRouter([
   {
-    element: <App />,
+    element: <Root />,
     errorElement: <p>erro</p>,
     children: [
       {
         path: "/",
-        element: <p>How are you doing?</p>
+        element: <Inicio />
       }
     ]
   }
