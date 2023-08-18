@@ -5,6 +5,7 @@ import "./tailwind.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import Inicio from "./pages/inicio/Index.tsx";
+import Favoritos from "./pages/Favoritos/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Inicio />
+      },
+      {
+        path: "/favoritos",
+        element: <Favoritos />
       }
     ]
   }

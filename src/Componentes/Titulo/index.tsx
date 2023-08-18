@@ -4,6 +4,8 @@ interface TituloProps {
 
 export default function Titulo({children}: TituloProps) {
   return (
-    <h1 className="flex justify-center items-center">{children}</h1>
+    <div className="flex justify-center items-center py-4 my-4">
+      <h1 className="text-xl sm:text-2xl md:text-3xl">{children}</h1>
+    </div>
   );
 }
