@@ -1,10 +1,12 @@
+import { ReactNode } from "react";
+
 interface ContainerProps {
-  children: any
+  children: ReactNode
 }
 
 export default function Container({children}: ContainerProps) {
   return (
-    <section className=" my-8 mx-80 text-center">
+    <section className="mx-8 lg:mx-32 2xl:mx-42 3xl:mx-[500px] text-center">
       {children}
     </section>
   );

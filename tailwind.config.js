@@ -7,7 +7,11 @@ export default {
       sans: ["Montserrat", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
-    extend: {},
+    extend: {
+      screens: {
+        "3xl": "1800px",
+      }
+    },
   },
   plugins: [],
 };
